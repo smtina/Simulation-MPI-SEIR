@@ -26,6 +26,7 @@ Infection is checked in the **Moore neighbourhood** (8 surrounding cells + own c
 ---
 
 ## 📂 Project Structure
+<pre>
 ├── src/
 │   ├── infect_seq.c        # Sequential baseline
 │   └── infect_central.c    # MPI parallel version 
@@ -35,6 +36,7 @@ Infection is checked in the **Moore neighbourhood** (8 surrounding cells + own c
 ├── plots.py                # Performance & SEIR curve ploting
 ├── Makefile
 └── run_test_infect.sh      # Full benchmark pipeline
+</pre>
 ## ⚙️ Requirements
 
 - GCC
@@ -68,13 +70,13 @@ This will:
 make plot
 
 📈 Outputs
-->CSV Files (data/)
-->seir_sequential.csv
-->seir_data_pX_repro.csv
-->speedup_allgather.csv
-->Graphs (graph/)
-->SEIR evolution curves
-->Speedup plots
+- CSV Files (data/)
+- seir_sequential.csv
+- seir_data_pX_repro.csv
+- speedup_allgather.csv
+- Graphs (graph/)
+- SEIR evolution curves
+- Speedup plots
 
 
 ## Parallelization (MPI)
